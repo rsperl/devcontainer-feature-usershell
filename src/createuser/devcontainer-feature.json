@@ -1,0 +1,29 @@
+{
+    "name": "Create user with particular shell",
+    "id": "usezsh",
+    "version": "0.0.0",
+    "description": "Create a user with particular shell",
+    "options": {
+        "username": {
+            "type": "string",
+            "default": "root",
+            "description": "Enter the username"
+        },
+        "userid": {
+            "type": "string",
+            "default": "1000",
+            "description": "UID"
+        },
+        "groupid": {
+            "type": "string",
+            "default": "1000",
+            "description": "GID"
+        },
+        "usershell": {
+            "type": "string",
+            "default": "/bin/bash",
+            "description": "Give the full path to the shell"
+        }
+    },
+    "installsAfter": []
+}
