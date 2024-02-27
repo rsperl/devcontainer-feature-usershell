@@ -12,6 +12,9 @@ is_debian() {
 add_debian_user() {
     useradd --shell "$USERSHELL" --create-home -u "$USERID" --gid "$GROUPID" "$USERNAME"
 }
+modify_debian_user() {
+    usermod --shell "$USERSHELL" "$USERNAME"
+}
 
 # The 'install.sh' entrypoint script is always executed as the root user.
 #
@@ -27,5 +30,5 @@ add_debian_user() {
 
 #####
 if [ "$(is_debian)" = "1" ]; then
-    add_debian_user
+    modify_debian_user
 fi
