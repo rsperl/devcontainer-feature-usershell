@@ -1,6 +1,6 @@
 {
     "name": "Create user with particular shell",
-    "id": "usezsh",
+    "id": "createuser",
     "version": "0.0.0",
     "description": "Create a user with particular shell",
     "options": {
